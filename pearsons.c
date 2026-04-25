@@ -15,7 +15,14 @@ double pearson_correlation(double *A, double *B, unsigned int size)
 		mag_a += A[i] * A[i];
 		mag_b += B[i] * B[i];
 	}
-	return dot_p / (sqrt(mag_a) * sqrt(mag_b));
+	double denom = sqrt(mag_a) * sqrt(mag_b);
+
+	if (denom == 0 || isnan(denom))
+	{
+		return 0.0;
+	}
+
+	return dot_p / denom;
 }
 
 void calc_similarity(double *normalizeduser, double *normalized_matrix, double *similarity, int No_of_users, int No_of_movies)
