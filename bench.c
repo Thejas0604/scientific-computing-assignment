@@ -15,7 +15,7 @@ void recommender_compute(int userid,
                          char *moviegenres,
                          int No_of_users);
 
-#define NO_OF_MOVIES 9000
+#define NO_OF_MOVIES 9125
 
 int main(int argc, char *argv[])
 {
