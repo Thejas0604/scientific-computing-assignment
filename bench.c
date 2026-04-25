@@ -7,6 +7,7 @@
 #include "matrix_normalization.h"
 #include "helpers.h"
 
+#define NO_OF_MOVIES 9125
 // recommender function (you modified this)
 void recommender_compute(int userid,
                          double *utility_matrix,
@@ -15,7 +16,6 @@ void recommender_compute(int userid,
                          char *moviegenres,
                          int No_of_users);
 
-#define NO_OF_MOVIES 9125
 
 int main(int argc, char *argv[])
 {
