@@ -43,7 +43,7 @@ int make_prediction(double *user,
 		}
 
 		// stricter condition + safe division
-		if (count > 1 && sum2 != 0.0 && !isnan(sum2))
+		if (count > 0 && sum2 != 0.0 && !isnan(sum2))
 		{
 			recommended_movies[no_of_recommended_movies] = i;
 			predicted_ratings[no_of_recommended_movies] = sum1 / sum2;
