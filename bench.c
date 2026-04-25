@@ -6,6 +6,8 @@
 #include "utility_matrix.h"
 #include "matrix_normalization.h"
 
+
+int findusers();
 // recommender function (you modified this)
 void recommender_compute(int userid,
                          double *utility_matrix,
