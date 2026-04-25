@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -O2 -Wall -lm
 
-SRC = bench.c recommender.c pearson.c kmeans.c predictions.c sorting.c utility_matrix.c matrix_normalization.c
+SRC = bench.c recommender.c pearsons.c kmeans.c predictions.c sorting.c utility_matrix.c matrix_normalization.c helpers.c
 OBJ = $(SRC:.c=.o)
 
 TARGET = bench
