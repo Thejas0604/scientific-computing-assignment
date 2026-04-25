@@ -8,7 +8,6 @@
 #include "helpers.h"
 
 #define NO_OF_MOVIES 9125
-// recommender function (you modified this)
 void recommender_compute(int userid,
                          double *utility_matrix,
                          double *normalized_matrix,
